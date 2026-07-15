@@ -4,7 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-# Настраиваем прокси для быстрой загрузки библиотек без блокировок
 ENV GOPROXY=https://golang.org,direct
 
 RUN go mod tidy
