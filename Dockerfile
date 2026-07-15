@@ -9,3 +9,5 @@ ENV GOPROXY=https://golang.org,direct
 RUN go mod tidy
 
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /main .
+
+CMD ["/main"] 
